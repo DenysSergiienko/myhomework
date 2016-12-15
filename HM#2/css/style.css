@@ -1,0 +1,184 @@
+/*Main font*/
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+/*Wrapper styles*/
+
+ .wrapper{
+	background: white;
+	width: 1060px;
+	height: 100%;
+	margin-left: 150px;
+	box-shadow: 0px 0px 5px 0px rgba(143,143,143,1);
+}
+
+/*Header styles*/
+
+.header{
+	padding-top: 50px;
+	padding-left: 46px;
+	padding-right: 50px;
+}
+.logo{
+	height: 40px;
+	width: 142px;
+	padding-bottom: 40px;
+}
+.menu{
+	height: 40px;
+	width: auto;
+	background: linear-gradient(to top, #444343, #5e5e5e);
+}
+
+/*Main menu styles*/
+
+li a.mb{
+	height: 40px;
+	padding-top:12px;
+	padding-left: 40px;
+	padding-right: 40px;
+	float: left;
+	text-decoration: none;
+	color: white;
+	font-family: 'Open Sans', sans-serif;;
+	font-weight: 400;
+	text-shadow: 1px 1px 2px rgba(68, 68, 68, 1);
+}
+
+li a.mb:hover{
+	height: 26px;
+	padding-left: 39px;
+	padding-right: 39px;
+	background: linear-gradient(to top, #2f2f2f, #4a4a4a);
+	border-left: 1px solid #838383;
+	border-right: 1px solid #838383;
+}
+
+/*Sidebar menu styles*/
+
+.sidebar {
+	width: 240px;
+	float: left;
+}
+
+ul.sbul{
+	border-top: 1px solid #c8c8c8;
+	border-left: 1px solid #c8c8c8;
+	border-right: 1px solid #c8c8c8;
+}
+
+li a.sb{
+	padding-left: 40px;
+	color: #656363;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	padding-top: 12px;
+    padding-bottom: 12px;
+    display: block;
+    text-decoration: none;
+    border-bottom: 1px solid #c8c8c8;
+}
+li a.sb:hover{
+	padding-left: 52px;
+	color: #2c2c2c;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	padding-top: 12px;
+    padding-bottom: 12px;
+    display: block;
+    text-decoration: none;
+    border-bottom: 1px solid #c8c8c8;
+}
+
+/*Content styles*/
+
+.mainbody{
+	width: 1060px;
+	height: 650px;
+	padding-left: 46px;
+	padding-top: 40px;
+}
+
+.content{
+	width: 678px;
+	display: inline-block;
+	margin-left: 46px;
+	margin-right: 50px;
+}
+.imgbox{
+	padding-top: 20px;
+	padding-right: 20px;
+	border: 1px solid #c8c8c8;
+	padding-left: : 100px;
+	height: 400px;
+}
+.textblock{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 13px;
+	margin: 23px;
+	font-weight: 400;
+	font-size: 15px;
+    line-height: 24px;
+}
+.ph{
+	padding-left: 100px;
+		height: 307px;
+	width: 500px;
+}
+figure{
+	padding-top: 35px;
+    padding-right: 20px;
+    display: block;
+    height: 350px;
+    border: 1px solid #c8c8c8;
+}
+
+/*Footer styles*/
+
+.footer{
+	height: 40px;
+	width: auto;
+	background-color: #e1e1e1;
+	margin-left: 46px;
+	margin-right: 50px;
+	margin-top: 65px;
+	margin-bottom: 60px;
+}
+
+.footermenu{
+	height: 40px;
+    width: 70%;
+    float: left;
+}
+
+li a.fb{
+	height: 40px;
+	padding-top:12px;
+	padding-left: 40px;
+	padding-right: 40px;
+	text-decoration: none;
+	color: #2c2c2c;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	float: left;
+}
+
+li a.fb:hover{
+	height: 26px;
+	padding-left: 40px;
+	padding-right: 40px;
+	text-decoration: underline;
+}
+
+.copyright{
+	height: 40px;
+    margin-top: 12px;
+    float: right;
+    margin-right: 25px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
