@@ -1,0 +1,27 @@
+.krt{
+	display: flex;
+	justify-content: center;
+}
+table {
+    border-collapse: collapse;
+    width: 540px;
+}
+td {
+    width: 60px;
+    border: 15px solid #000000;
+}
+tr {
+    height: 70px;
+}
+.grey {
+    background-color: #080808;
+}
+.blue {
+    background-color: #3f51b5;
+}
+.red {
+    background-color: #f44336;
+}
+.yellow {
+    background-color: #ffeb3b;
+}
