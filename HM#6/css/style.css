@@ -1,0 +1,426 @@
+@font-face {
+    font-family: 'lucida';
+    src: url('../fonts/lucida-sans-unicode_allfont.ru-webfont.woff2') format('woff2'),
+         url('../fonts/lucida-sans-unicode_allfont.ru-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+.wrapper {
+    width: 1000px;
+    margin: 0 auto;
+    position: relative;
+    height: 100%;
+    min-height: 700px;
+    background: white;
+}
+header{
+    height: 55px;
+    width: 908px;
+    margin: 0 auto;
+    background: white;
+}
+.phone_icon{
+    width: 22px;
+    height: 20px;
+    padding: 22px 0px 0px 6px;
+    float: left;
+}
+.numbers{
+    float: left;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    margin: 24px 0px 0 4px;
+    letter-spacing: 0.02em;
+}
+.usermenu{
+    width: 495px;
+    height: 25px;
+    float: left;
+    margin: 18px 0 0 18px;
+    background: -webkit-linear-gradient(bottom, #0c3357, #1f6685);
+    border-radius: 4px;
+    box-shadow: 3px 2px 4px 0px rgba(128, 128, 128, 0.45);
+}
+.user_icon{
+    margin: 3px 0px 0 7px;
+    float: left;
+}
+.login_name{
+    float: left;
+    margin: 3px 0px 0px 3px;
+    height: 12px;
+    width: 105px;
+    line-height: 12px;
+    font-size: 11px;
+    padding: 0px 2px 2px 3px; 
+    font-family: lucida; 
+}
+.login_pass{
+    float: left;
+    margin: 3px 0px 0px 6px;
+    height: 12px;
+    width: 105px;
+    line-height: 12px;
+    font-size: 11px;
+    padding: 0px 2px 2px 3px;
+    font-family: lucida;
+}
+.enter{
+    margin: 0 0 0 0;
+    float: left;
+    color: white;
+    font-family: lucida;
+    font-size: 11px;
+    text-decoration: none;
+    margin: 7px 0px 0 9px;
+}
+.registration{
+    margin: 0 0 0 0;
+    float: left;
+    color: white;
+    font-family: lucida;
+    font-size: 11px;
+    text-decoration: none;
+    border-left: 1px solid white;
+    margin: 7px 0 0 5px;
+    padding-left: 6px;
+}
+.forget_pass{
+    float: left;
+    font-family: lucida;
+    font-size: 11px;
+    color: #bcbdbd;
+    margin: 6px 0px 0 21px;
+    text-decoration: none;
+    border-bottom: 1px solid;
+    letter-spacing: 0.02em;
+}
+.minmenu{
+    float: left;
+    margin: 19px 0 0 16px;
+    border: 1px solid #d8dbdd;
+    padding: 0px 8px 2px 8px;
+    border-radius: 10px;
+    height: 17px;
+}
+.home{
+    float: left;
+}
+.tree{
+    float: left;
+    padding: 0 0 0 8px;
+}
+.mail{
+    float: left;
+    padding: 0 4px 0 9px;
+}
+section{
+    margin: 0 0 0 45px;
+}
+.main_menu{
+    height: 34px;
+    width: 770px;
+    background: black;
+    padding-left: 138px;
+    background: linear-gradient(to top, #010101, #151719, #4d5663);
+    border: solid 1px #151a2e;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px 0px rgba(80,82,94,1);
+    margin: 3px 0 0 0;
+}
+.main_menu li{
+   float: left;
+    padding: 10px 0px 0px 0px;
+    font-family: lucida;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+.main_menu li a{
+    color: #b1bcc0;
+    text-decoration: none;
+    padding: 7px 15px 7px 15px;
+}
+.main_menu li a:hover{
+    color: white;
+    padding: 3px 15px 2px 15px;
+    background-color: blue;
+    border-radius: 21px;
+    background: linear-gradient(to top, #0c3357, #1f6787);
+}
+.cart{
+    float: left;
+}
+.cart img{
+    float: left;
+    padding: 9px 0 0 56px;
+}
+.cart span{
+    float: left;
+    font-family: lucida;
+    font-size: 11px;
+    color: #8a9296;
+    padding: 12px 0px 5px 9px;
+}
+nav{
+    width: 183px;
+    height: auto;
+    background: white;
+    float: left;
+    margin: 17px 0 0 45px
+
+}
+.catalogue{
+    width: auto;
+    height: 25px;
+    background-color: white;
+    border-radius: 15px;
+    border: 1px solid #8b979c;
+    margin-bottom: 12px;
+}
+.catalogue_icon{
+    border-radius: 12px;
+    background: linear-gradient(to top, #0c3357, #1f6787);
+    margin: 2px 0px 0px 2px;
+    padding: 3px 0px 0px 5px;
+    width: 17px;
+    height: 18px;
+    float: left;
+}
+.catalogue_title{
+    font-family: lucida;
+    font-size: 12px;
+    padding: 7px 0px 0 6px;
+    letter-spacing: 0.02em;
+    color: #14496b;
+    float: left;
+}
+.catalogue_menu{
+    width: 184px;
+    height: 400px;
+    background: white;
+}
+.list_title{
+    height: 26px;
+    width: 148px;
+    color: #14496b;
+    font-family: lucida;
+    font-size: 12px;
+    border: 1px solid grey;
+    border-radius: 13px;
+    margin: 0px 0 0 2px;
+}
+.point{
+    float: left;
+    height: 18px;
+    width: 18px;
+    background: linear-gradient(to top, #0c3357, #1f6787);
+    border-radius: 14px;
+    padding: 6px 0 0 6px;
+    margin: 1px 0 0 3px;
+}
+.list_title_name{
+    float: left;
+    width: 110px;
+    margin: 7px 0 0 2px;
+    font-size: 14px;  
+}
+.catalogue_list{
+    margin: 8px 0px 11px 55px;
+    font-family: lucida;
+    font-size: 12px;
+}
+.catalogue_list a{
+    color: #14496b;
+    text-decoration: none; 
+}
+.catalogue_list a:hover{
+    color: #14496b;
+    text-decoration: underline; 
+    font-weight: bold;
+    font-style: italic;
+}
+article{
+    width: 527px;
+    height: 624px;
+    background: linear-gradient(to top, #93a7b0, #e5e7e8);
+    float: left;
+    margin: 17px 0 0 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 2px;
+}
+.product{
+    height: 185px;
+    width: 140px;
+}
+.name{
+    color: #14496b;
+    font-family: lucida;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+}
+.subname{
+    font-family: lucida;
+    font-size: 12px;
+    text-align: center;
+}
+.productimg{
+    border: 1px solid grey;
+    border-radius: 9px;
+    height: 123px;
+    padding: 5px 0 0 29px;
+    background: white;
+}
+.price{
+    color: #14496b;
+    font-family: arial;
+    font-style: italic;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    margin: 3px 0 0 0;
+}
+.price span{
+    content: "грн."
+    color: #14496b;
+    font-family: arial;
+    font-style: italic;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+aside{
+    width: 184px;
+    height: auto;
+    float: left;
+    margin: 15px 0 0 10px;
+}
+.filter{
+    width: auto;
+    height: 25px;
+    background-color: white;
+    border-radius: 15px;
+    border: 1px solid #8b979c;
+    margin-bottom: 14px;
+}
+.filter_icon{
+    border-radius: 12px;
+    background: linear-gradient(to top, #0c3357, #1f6787);
+    margin: 2px 0px 0px 2px;
+    padding: 3px 0px 0px 5px;
+    width: 17px;
+    height: 18px;
+    float: left;
+}
+.filter_menu_title{
+    font-family: lucida;
+    font-size: 12px;
+    padding: 7px 0px 0 6px;
+    letter-spacing: 0.02em;
+    color: #14496b;
+    float: left;
+}
+.filter_menu{
+    width: 184px;
+    height: 400px;
+    background: white;
+}
+.filter_title{
+    height: 26px;
+    width: 148px;
+    color: #14496b;
+    font-family: lucida;
+    font-size: 12px;
+    border: 1px solid grey;
+    border-radius: 13px;
+    margin: 0px 0 0 15px;
+}
+.filter_title_name{
+    float: left;
+    width: 110px;
+    margin: 7px 0 0 2px;
+    font-size: 14px;  
+}
+.filter_options{
+    width: 185px;
+    height: 100px;
+}
+.inpt{
+    position: relative;
+    display: block;
+    height: 15px;
+    width: 100%;
+    color: #465961;
+    margin: 6px 0 5px;
+    padding: 0 0 0 20px;
+    font-family: Lucida;
+    font-size: 12px;
+}
+.inpt span{
+    margin: 0 0 0 8px;
+}
+.filter_options_btn{
+    height: 24px;
+    width: 83px;
+    background: linear-gradient(to top, #0d3458, #1f6787);
+    border: none;
+    margin: 0px 0 0 22px;
+    cursor: pointer;
+    font-family: Lucida;
+    font-size: 11px;
+    color: white;
+    border-radius: 12px; 1f6787
+
+}
+.frontmainbodybottom{
+    height: 75px;
+    width: 100%;
+    float: left;
+    margin: 8px 0 0 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.frontmainbodybottom img{
+    margin: 4px 0 0 13px;
+}
+footer{
+    height: 100px;
+    width: 910px;
+    background: #213a4d;
+    float: left;
+    margin: 7px 0 0 47px;
+}
+footer ul{
+    margin: 8px 0 0 310px;
+}
+.footermenu{
+    float: left;
+    margin-right: 10px;
+    color: white;
+}
+.footermenu a{
+    font-family: lucida;
+    font-size: 12px;
+    text-decoration: none;
+    color: white;
+}
+.footermenu a:hover{
+    color: #52abcb;
+    font-family: lucida;
+    font-size: 12px;
+    text-decoration: underline;
+}
+.copyright{
+        margin: 39px 0 0 379px;
+    color: #7f4740;
+    font-family: lucida;
+    font-size: 10px;
+}
