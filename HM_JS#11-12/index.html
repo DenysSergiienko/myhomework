@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>HM_JS-9-10</title>	
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/jquery.carousel.js"></script>
+	<script type="text/javascript" src="js/tpl.js"></script>
+	<script src="js/script.js"></script>
+
+</head>
+
+<body>
+
+<div class="carousel_wrapper">
+<div class="carousel_title">Carousel with installed plugin</div> <!--  Заголовок блока -->
+<div class="carousel_left_arrow"><img src="img/left-arrow.png" alt=""></div> <!--  Левая кнопка -->
+<div class="carousel_hider"> <!--  Прячет все article за рамку -->
+<div class="carousel"> 		 <!--  Сама карусель в которой все article -->
+<script type="text/html" id="items_tmpl">
+<% for ( var i = 0; i < data.length; i++ ) { %>
+<div class="carousele_article">
+  <%=  data[i].image %>
+  <h1><%= data[i].title %></h1>
+  <p id="carousele_item"><%= data[i].text %></p>
+  <p><%= data[i].button %></p></li>
+</div>
+<% } %>
+</script> <!--  Скрипт шаблонизатора который создает все article из массива-->
+</div>
+</div>
+<div class="carousel_right_arrow"><img src="img/right-arrow.png" alt=""></div> <!--  Правая кнопка -->
+</div>
+
+
+</body>
+
+
+</html>
+

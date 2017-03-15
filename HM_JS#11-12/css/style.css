@@ -1,0 +1,72 @@
+h1{
+    font-size: 24px;
+    font-family: arial;
+    margin: 10px 0 0 10px;
+}
+.carousele_article{
+    width: 250px;
+    height: 355px;
+    background: grey;
+    float: left;
+    margin: 15px 0 0px 15px;
+}
+.carousele_article p{
+    width: 220px;
+    font-family: arial;
+    margin: 10px 0px 0 18px;
+}
+.carousele_article a{
+    font-size: 16px;
+    font-family: arial;
+    display: block;
+    margin: 15px 0px 0 0px;
+    text-decoration: none;
+    color: white;
+    background: #980909;
+    width: 70px;
+    height: 24px;
+    padding: 10px 0px 0px 10px;
+}
+.carousele_article img{
+    max-width: 250px;
+}
+.carousel_hider{
+    height: 385px;
+    max-width: 810px;
+    overflow: hidden;
+    float: left;
+}
+.carousel{
+    width: 10000px;
+    position: relative;
+}
+.carousel_wrapper{
+    width: 1079px;
+    height: 440px;
+    background: #a5a1a1;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+.carousel_title{
+    width: 345px;
+    font-size: 24px;
+    font-family: arial;
+    font-weight: bold;
+    margin: 0 auto;
+}
+.carousel_left_arrow{
+    width: 20px;
+    float: left;
+    margin: 185px 0 0 100px;
+}
+.carousel_left_arrow img{
+    max-width: 20px;
+}
+.carousel_right_arrow{
+    width: 20px;
+    float: left;
+    margin: 185px 0 0 0px;
+}
+.carousel_right_arrow img{
+    max-width: 20px;
+}
