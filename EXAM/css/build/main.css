@@ -1,0 +1,387 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+header {
+  background: url(../../img/head.png);
+  background-position: center;
+  background-size: cover;
+  width: auto;
+  height: 700px; }
+  header .header_btn {
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    color: white;
+    background-color: #ff4e50;
+    font-size: 14px;
+    display: block;
+    padding: 11px 0px;
+    border-radius: 19px;
+    width: 225px;
+    text-align: center;
+    margin: 39px auto; }
+  header p {
+    color: white;
+    display: block;
+    width: auto;
+    text-align: center;
+    font-family: 'roboto', arial;
+    font-size: 24px;
+    font-weight: lighter;
+    padding: 27px 0px 0px 0px; }
+
+h1 {
+  font-size: 52px;
+  font-family: "Montserrat";
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: center;
+  display: block;
+  padding-top: 133px; }
+
+.login {
+  width: 960px;
+  height: 36px;
+  margin: 0 auto;
+  padding-top: 40px; }
+  .login .btn:hover {
+    padding: 9px 14px;
+    border: 2px solid white;
+    border-radius: 19px; }
+  .login .logo {
+    float: left; }
+
+.btn {
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+  display: block;
+  float: right;
+  padding: 11px 16px; }
+
+section {
+  width: 960px;
+  height: auto;
+  clear: both;
+  margin: 0 auto; }
+
+.grid {
+  width: 960px;
+  margin: 0 auto; }
+
+.grid-item {
+  width: 300px;
+  height: 310px;
+  background-repeat: no-repeat;
+  float: left;
+  border-radius: 3px;
+  margin: 9px; }
+
+.grid-item_title {
+  color: white;
+  font-size: 22px;
+  font-family: "Montserrat";
+  text-align: center;
+  font-weight: bold;
+  line-height: 1.2;
+  margin-top: 150px; }
+
+.width2 {
+  width: 65%;
+  height: 310px; }
+
+.title {
+  height: 50px;
+  width: 960px;
+  font-size: 22px;
+  font-family: "Montserrat";
+  color: #333333;
+  font-weight: bold;
+  line-height: 1.2;
+  text-align: center;
+  margin: 0 auto;
+  padding: 89px 0 0 0px; }
+
+.step {
+  height: 400px;
+  background-size: cover;
+  width: 300px;
+  border-radius: 5px; }
+  .step a {
+    background-color: #ff4e50;
+    text-decoration: none;
+    color: white;
+    width: 70px;
+    height: 15px;
+    display: block;
+    border-radius: 20px;
+    text-align: center;
+    padding-top: 5px;
+    font-size: 10px;
+    font-family: "Montserrat";
+    line-height: 1.2;
+    text-transform: uppercase; }
+  .step h3 {
+    font-size: 24px;
+    font-family: "Montserrat";
+    color: white;
+    font-weight: bold;
+    line-height: 1.2; }
+  .step p {
+    font-size: 14px;
+    font-family: "Roboto";
+    color: white;
+    line-height: 1.2;
+    width: 260px; }
+
+.step__title {
+  display: block;
+  z-index: 5;
+  padding: 230px 0 0 20px;
+  width: 300px;
+  height: 400px; }
+
+.step_one {
+  background: url(../../img/1.png); }
+
+.step_two {
+  background: url(../../img/2.png); }
+
+.step_three {
+  background: url(../../img/3.png); }
+
+.jcarousel-wrapper {
+  width: 300px;
+  height: 400px;
+  float: left;
+  margin: 10px; }
+
+.jcarousel {
+  position: relative;
+  overflow: hidden; }
+  .jcarousel ul {
+    width: 20000em;
+    position: relative;
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+  .jcarousel li {
+    float: left; }
+
+/** Carousel Controls **/
+.jcarousel-control-prev,
+.jcarousel-control-next {
+  position: absolute;
+  top: 155px;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  color: #fff; }
+
+.jcarousel-control-prev {
+  left: 20px;
+  z-index: 20; }
+
+.jcarousel-control-next {
+  right: 20px;
+  z-index: 20; }
+
+.jcarousel-control-prev:hover span,
+.jcarousel-control-next:hover span {
+  display: block; }
+
+.jcarousel-control-prev.inactive,
+.jcarousel-control-next.inactive {
+  opacity: .5;
+  cursor: default; }
+
+.member {
+  width: 220px;
+  height: 240px;
+  margin: 6px 10px 0px 10px;
+  display: block;
+  float: left;
+  display: block;
+  background-repeat: no-repeat;
+  background-position: 50px 0px; }
+  .member .icon {
+    height: 30px;
+    width: 30px;
+    border-radius: 20px;
+    border: 4px solid white;
+    margin: 85px 0 0 125px; }
+    .member .icon img {
+      margin: 5px 0 0 6px; }
+  .member h4 {
+    width: 100%;
+    color: black;
+    font-size: 14px;
+    font-family: "Montserrat";
+    font-weight: bold;
+    line-height: 1.2;
+    text-align: center;
+    margin-top: 15px; }
+  .member p {
+    width: 100%;
+    color: black;
+    font-size: 14px;
+    font-family: "Roboto";
+    color: #666666;
+    line-height: 1.2;
+    text-align: center;
+    margin-top: 15px; }
+
+.member_one {
+  background-image: url(../../img/team_1.png); }
+  .member_one .icon {
+    background-color: #ff4e50; }
+
+.member_two {
+  background-image: url(../../img/team_2.png); }
+  .member_two .icon {
+    background-color: #1cd7ad; }
+
+.member_three {
+  background-image: url(../../img/team_3.png); }
+  .member_three .icon {
+    background-color: #ffa507; }
+
+.member_four {
+  background-image: url(../../img/team_4.png); }
+  .member_four .icon {
+    background-color: #4e73db; }
+
+.button {
+  display: block;
+  clear: both;
+  width: 200px;
+  height: 50px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 43px 0px 0 0px; }
+  .button a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #ff4e50;
+    padding: 8px 31px;
+    border-radius: 20px;
+    font-size: 14px;
+    border: 2px solid #ff4e50; }
+  .button a:hover {
+    background-color: white;
+    border-color: #ff4e50;
+    color: #ff4e50; }
+
+.discover_text {
+  font-size: 18px;
+  font-family: "Roboto";
+  color: #333333;
+  line-height: 1.2;
+  text-align: center;
+  margin-top: 9px; }
+
+form {
+  width: 100%;
+  text-align: center;
+  margin-top: 37px; }
+
+#query {
+  height: 40px;
+  width: 225px;
+  border-radius: 3px;
+  border: 1px solid #cccccc;
+  font-size: 14px;
+  font-family: "Roboto";
+  padding-left: 15px; }
+
+#search {
+  width: 200px;
+  height: 40px;
+  border-radius: 20px;
+  border: 2px solid #ff4e50;
+  background-color: #ff4e50;
+  color: white;
+  font-family: 'Montserrat', sans-serif; }
+  #search :hover {
+    background-color: white; }
+
+.line {
+  height: 4px;
+  width: 100%;
+  background-color: #ff4e50;
+  margin-top: 100px; }
+
+footer {
+  width: 960px;
+  height: 190px;
+  margin: 0 auto; }
+  footer a {
+    display: block;
+    height: 150px;
+    width: 150px;
+    padding-top: 40px;
+    float: left; }
+
+.footer_menu {
+  padding-top: 40px;
+  padding-left: 90px;
+  width: 90px;
+  float: left; }
+  .footer_menu p {
+    font-size: 14px;
+    font-family: "Montserrat";
+    font-weight: bold;
+    line-height: 1.2;
+    color: #333333; }
+  .footer_menu ul {
+    width: 60px;
+    padding-top: 20px;
+    margin-top: 0 auto; }
+    .footer_menu ul li {
+      font-size: 14px;
+      font-family: "Roboto";
+      line-height: 1.714;
+      color: #8f8f8f; }
+
+.designed {
+  float: right;
+  padding-top: 40px; }
+
+/*# sourceMappingURL=main.css.map */

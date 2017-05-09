@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HM-13_14</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css"
+          integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/template.js"></script>
+    <script src="js/script.js"></script>
+</head>
+<body>
+<div class="buttons">
+<button class="btn btn-primary" id="toLocalStorage">Загрузить в Local Storage</button>
+<button class="btn btn-primary disabled" id="fromLocalStorage" disabled>Выгрузить из Local Storage</button>
+<button class="btn btn-primary disabled" id="reload" disabled>Пройти тест</button>
+</div>
+<script type="text/template" id="test">
+    <div class="test-form">
+        <h2 class="header"><%= [data.header] %></h2>
+        <form action="#" method="post">
+            <ul>
+                <% for ( var i = 0; i < data.questions.length; i++) { %>
+                <li><h5><%= data.questions[i] %></h5>
+                    <fieldset id="fieldset<%= [i] %>">
+                    <%= data.check %>
+                    <% for ( var j = 0; j < data.answers[i].length; j++) { %>
+                    <label class="form-check-label"> <input type="checkbox" class="form-check-input" name="<%=data.answers[i][j]%>"
+                                                            > <%= data.answers[i][j] %> </label>
+                    <% }; %>
+                    </fieldset>
+                </li>
+                <% }; %>
+            </ul>
+
+        </form>
+        <input id="testButton" type="submit" value="<%= data.button%>" class="btn btn-primary">
+    </div>
+</script>
+<div id="modal_form">
+    <span id="modal_close">X</span>
+    <div id="modal_text"></div>
+</div>
+<div id="overlay"></div>
+</body>
+</html>

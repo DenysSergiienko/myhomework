@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>HM_JS#19_20</title>
+	<link rel="stylesheet" href="css/style.css">
+	<script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+	<script type="text/javascript" src="js/jcarousel.js"></script>
+	<script type="text/javascript" src="js/tpl.js"></script>
+	<script type="text/javascript" src="js/accordeon.js"></script>
+
+
+</head>
+<body>
+
+<div class="wrapper">
+	<div class="header">
+		<div class="header__logo">
+			<a href="#">
+				<img src="img/logo.png" alt="">
+			</a>
+		</div>
+		<div class="icons">
+			<ul>
+				<li class="icons__item"><a href="#"><img src="img/fb_icon.png" alt=""></a></li>
+				<li class="icons__item"><a href="#"><img src="img/rss_icon.png" alt=""></a></li>
+				<li class="icons__item"><a href="#"><img src="img/linkedin_icon.png" alt=""></a></li>
+				<li class="icons__item"><a href="#"><img src="img/skype_icon.png" alt=""></a></li>
+			</ul>
+		</div>
+		</div>
+	<div class="headmenu">
+		<div class="headmenu__box">
+			<ul class="menu">
+				<li class="menu__item">
+					<a class="menu__link" href="">Home</a>
+				</li>
+				<li class="menu__item">
+					<a class="menu__link" href="">Features</a>
+				</li>
+				<li class="menu__item">
+					<a class="menu__link" href="">Services</a>
+				</li>
+				<li class="menu__item">
+					<a class="menu__link" href="">News</a>
+				</li>
+				<li class="menu__item">
+					<a class="menu__link" href="">Shop</a>
+				</li>
+			</ul>
+		</div>
+		<div class="search">
+			<input type="text" class="search__type" placeholder="Search..."><a href="#" class="search__button"><img src="img/search_icon.png" alt=""></a>
+		</div>
+	</div>
+
+<div class="slider">
+<div class="jcarousel">
+    <ul>
+        <li class="active"><img src="img/slide.png" width="1160" height="470" alt=""></li>
+        <li><img src="img/slide.png" width="1160" height="470" alt=""></li>
+        <li><img src="img/slide.png" width="1160" height="470" alt=""></li>
+    </ul>
+<div class="jcarousel-pagination">
+        <!-- Pagination items will be generated in here -->
+</div>
+</div>
+
+</div>
+<div class="block">
+<script type="text/html" id="block_tmpl">
+<% for ( var i = 0; i < 3; i++ ) { %>
+	<div class="block article">
+	  <div class="article_number"><%= data[i].number %></div>
+	  <div class="article_image"><%=  data[i].image %></div>
+	  <div class="article_title"><%= data[i].title %></div>
+	  <p class="article_text"><%= data[i].text %></p>
+	  <p><%= data[i].readmore %></p>
+	</div>
+<% } %>
+</script>
+</div>
+<div class="block_services">
+<div class="title">Our Services</div>
+<div class="block_services_articles">
+<script type="text/html" id="block_services_tmpl">
+<% for ( var i = 0; i < 4; i++ ) { %>
+	<div class="article">
+	  <div class="article_image"><%=  data[i].image %></div>
+	  <div class="article_title"><%= data[i].title %></div>
+	</div>
+<% } %>
+</script>
+</div>
+</div>
+<div class="block_latest_wrap">
+<div class="block_latest">
+<div class="block_latest_left">
+<div class="block_latest title">Latest News</div>
+<div class="block_latest_articles">
+<script type="text/html" id="block_late_tmpl">
+<% for ( var i = 0; i < 2; i++ ) { %>
+	<div class="article">
+	  <div class="article_image"><%=  data[i].image %>
+	  	<div class="month"><%= data[i].month %></div>
+	    <div class="day"><%= data[i].day %></div>
+	  </div>
+	  <div class="article_title"><%= data[i].title %></div>
+	  <div class="article author">by&nbsp<%= data[i].author %></div>
+	  <div class="article comments">comments&nbsp<%= data[i].comments %></div>
+	  <div class="article text"><%= data[i].text %></div>
+	</div>
+<% } %>
+</script>
+</div>
+</div>
+<div class="block_latest_right">
+<div class="block_latest title">Banners Place</div>
+<div class="mini-menu">
+    <ul>
+        <li class="sub">
+            <a href="#" class="active">Accordion Panel - 1</a>
+            <ul style="display: block">
+               <p>Cum sociis natoque penatibus et magnis dis parturient mus. Pro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur momo. Cum sociis natoque penatibus et magnis dis parturient ontesmus. Nemo enim ipsam voluptatem quia ptas sit aspernatur samomoPro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur </p>
+            </ul>
+        </li>
+        <li class="sub">
+            <a href="#">Accordion Panel - 2</a>
+            <ul>
+               <p>Cum sociis natoque penatibus et magnis dis parturient mus. Pro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur momo. Cum sociis natoque penatibus et magnis dis parturient ontesmus. Nemo enim ipsam voluptatem quia ptas sit aspernatur samomoPro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur </p>
+            </ul>
+        </li>
+        <li class="sub">
+            <a href="#">Accordion Panel - 3</a>
+            <ul>
+                <p>Cum sociis natoque penatibus et magnis dis parturient mus. Pro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur momo. Cum sociis natoque penatibus et magnis dis parturient ontesmus. Nemo enim ipsam voluptatem quia ptas sit aspernatur samomoPro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur </p>
+            </ul>
+        </li>
+    </ul>
+</div>
+</div>
+</div>
+</div>
+<div class="manufacturers">
+	<ul>
+		<li><a href="#"><img src="img/logo_1.png" alt=""></a></li>
+		<li><a href="#"><img src="img/logo_2.png" alt=""></a></li>
+		<li><a href="#"><img src="img/logo_3.png" alt=""></a></li>
+		<li><a href="#"><img src="img/logo_4.png" alt=""></a></li>
+		<li><a href="#"><img src="img/logo_5.png" alt=""></a></li>
+		<li><a href="#"><img src="img/logo_6.png" alt=""></a></li>
+	</ul>
+</div>
+<div class="footer">
+	<div class="footer_menu">
+		<div class="title">Social</div>
+		<ul>
+			<li><a href="#">Facebook</a></li>
+			<li><a href="#">Flickr</a></li>
+			<li><a href="#">Twitter</a></li>
+			<li class="last"><a href="#">Vimeo</a></li>
+		</ul>
+	</div>
+	<div class="footer_menu">
+		<div class="title">Links</div>
+		<ul>
+			<li><a href="#">How to Write a Blog</a></li>
+			<li><a href="#">Create a Blog in 4 Steps</a></li>
+			<li><a href="#">15 Tips to Increase Traffic</a></li>
+			<li class="last"><a href="#">20 Blog Post Ideas</a></li>
+		</ul>
+	</div>
+	<div class="footer_menu">
+		<div class="title">Blogroll</div>
+		<ul>
+			<li><a href="#">Blogs Blog</a></li>
+			<li><a href="#">Roll Up Roll Up</a></li>
+			<li><a href="#">Blog Free</a></li>
+			<li class="last"><a href="#">Wordpress Blog</a></li>
+		</ul>
+	</div>
+	<div class="footer_menu">
+		<div class="title">About Us</div>
+		<ul>
+			<li><a href="#">Agriculture</a></li>
+			<li><a href="#">Harvest</a></li>
+			<li><a href="#">Company news</a></li>
+			<li class="last"><a href="#">Investor relations</a></li>
+		</ul>
+	</div>
+</div>
+
+</body>
+</html>
+
